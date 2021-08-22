@@ -1,0 +1,71 @@
+<template>
+  <div>
+    <button class="btn" @click="toggle" :class="{checked:value}">
+      <div class="bg"></div>
+      <span class="circle" ></span>
+    </button>
+    {{value}}
+  </div>
+</template>
+
+<script >
+export default {
+  name: 'switch',
+  props:{
+    value:Boolean
+  },
+  setup(props,context){
+      const toggle= () =>{
+        context.emit('update:value',!props.value)
+    }
+    return {toggle}
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+  $h:30px;
+  $w:60px;
+  $h2: $h - 2px;
+  .btn{
+    display: inline-block;
+    height: $h;
+    width: $w;
+    border: none;
+    border-radius: $h;
+    position: relative;
+    overflow: hidden;
+    .bg{
+      position: absolute;
+      display: inline-block;
+      height: $h2;
+      width: $h2 - 2px;
+      border-radius: $h2;
+      left: 2px;
+      top: 1px;
+      background: #fff;
+      z-index: 1;
+      transition: all 250ms ease-in-out;
+    }
+    .circle{
+      z-index: 2;
+      width: $h2;
+      height: $h2;
+      border-radius: $h2;
+      background: #fff;
+      position: absolute;
+      left: 1px;
+      top: 1px;
+      transition: all 250ms ease-in-out;
+    }
+    &.checked{
+      >.bg{
+        background: #5754d0;
+        width: calc(100% - 4px)
+      }
+      >.circle{
+        left: calc(100% - #{$h2} - 1px)
+      }
+    }
+  }
+</style>
