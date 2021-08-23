@@ -1,8 +1,8 @@
 <template>
   <div>
-    <button class="btn" @click="toggle" :class="{checked:value}">
-      <div class="bg"></div>
-      <span class="circle" ></span>
+    <button class="card-swc-btn" @click="toggle" :class="{checked:value}">
+      <div class="card-swc-bg"></div>
+      <span class="card-swc-circle" ></span>
     </button>
     {{value}}
   </div>
@@ -23,11 +23,11 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   $h:30px;
   $w:60px;
   $h2: $h - 2px;
-  .btn{
+  .card-swc-btn{
     display: inline-block;
     height: $h;
     width: $w;
@@ -35,7 +35,10 @@ export default {
     border-radius: $h;
     position: relative;
     overflow: hidden;
-    .bg{
+    &:focus{
+      outline: none;
+    }
+    .card-swc-bg{
       position: absolute;
       display: inline-block;
       height: $h2;
@@ -47,7 +50,7 @@ export default {
       z-index: 1;
       transition: all 250ms ease-in-out;
     }
-    .circle{
+    .card-swc-circle{
       z-index: 2;
       width: $h2;
       height: $h2;
@@ -59,11 +62,11 @@ export default {
       transition: all 250ms ease-in-out;
     }
     &.checked{
-      >.bg{
+      >.card-swc-bg{
         background: #5754d0;
         width: calc(100% - 4px)
       }
-      >.circle{
+      >.card-swc-circle{
         left: calc(100% - #{$h2} - 1px)
       }
     }
