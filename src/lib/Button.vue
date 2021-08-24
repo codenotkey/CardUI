@@ -16,7 +16,6 @@ import {computed} from "vue";
 
 export default {
   name: 'Button',
-  inheritAttrs:false,
   props:{
     shape:{
       type:String,
@@ -71,7 +70,7 @@ $height:30px;
       text-align: center;
       white-space: nowrap;
       font-size: 16px;
-      padding: 10px 16px;
+      padding: 8px 18px;
       background: white;
       color: #181818;
       border: 1px solid #d7d7d7;

@@ -8,7 +8,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+button:focus{
+  outline: none;
+}
 body {
   font-size: 16px;
   // 为什么这样写 font-family
