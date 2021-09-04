@@ -8,19 +8,24 @@ import SwitchDemo from './components/SwitchDemo.vue'
 import TabsDemo from './components/TabsDemo.vue'
 
 const history = createWebHashHistory()
+import { h } from 'vue';
+import Markdown from './components/Markdown.vue';
+const md = filename => h(Markdown, { path: `../markdown/${filename}.md`, key: filename })
 
 export const router =createRouter({
     history:history,
     routes:[
         {path:'/',component:Home},
-        {path:'/doc',
-            component:Doc,
+        {path:'/doc', component:Doc,
             children:[
-                {path:'',component:DocDemo},
-                {path:'button',component:ButtonDemo},
-                {path:'dialog',component:DialogDemo},
-                {path:'switch',component:SwitchDemo},
-                {path:'tabs',component:TabsDemo},
+                { path:'',redirect:'/doc/intro'},
+                { path: "intro", component: md('intro') },
+                { path: "get-started", component: md('get-started') },
+                { path: "install", component: md('install') },
+                { path:'button',component:ButtonDemo},
+                { path:'dialog',component:DialogDemo},
+                { path:'switch',component:SwitchDemo},
+                { path:'tabs',component:TabsDemo},
             ]
         }
     ]

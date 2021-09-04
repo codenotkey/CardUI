@@ -1,6 +1,6 @@
 <template>
   <div class="navContent">
-    <span class="toggleAside" @click="toggleAside">更多</span>
+    <span class="toggleAside" @click="toggleAside"><img src="../assets/更多.png"/></span>
     <span class="logo">
       <router-link to="/" >
         <img src="../assets/卡片.png" alt="">
@@ -58,6 +58,10 @@ export default {
 
     .toggleAside{
       display: none;
+      font-weight: 1000;
+      >img{
+        width: 28px;
+      }
     }
     @media (max-width: 500px) {
       .toggleAside{

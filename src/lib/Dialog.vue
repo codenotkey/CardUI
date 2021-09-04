@@ -96,7 +96,7 @@ $border-color: #d9d9d9;
 
   >header {
     padding: 12px 16px;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 0.5px solid $border-color;
     display: flex;
     align-items: center;
     justify-content: space-between;

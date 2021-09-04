@@ -973,6 +973,11 @@ get-stream@^5.0.0:
   dependencies:
     pump "^3.0.0"
 
+github-markdown-css@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/github-markdown-css/download/github-markdown-css-4.0.0.tgz#be9f4caf7a389228d4c368336260ffc909061f35"
+  integrity sha1-vp9Mr3o4kijUw2gzYmD/yQkGHzU=
+
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
   resolved "https://registry.nlark.com/glob-parent/download/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
@@ -1442,6 +1447,11 @@ magic-string@^0.25.2, magic-string@^0.25.7:
   dependencies:
     sourcemap-codec "^1.4.4"
 
+marked@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.nlark.com/marked/download/marked-1.1.1.tgz?cache=0&sync_timestamp=1629858356453&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fmarked%2Fdownload%2Fmarked-1.1.1.tgz#e5d61b69842210d5df57b05856e0c91572703e6a"
+  integrity sha1-5dYbaYQiENXfV7BYVuDJFXJwPmo=
+
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.npm.taobao.org/media-typer/download/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
@@ -1818,6 +1828,11 @@ postcss@^8.1.10:
     colorette "^1.2.2"
     nanoid "^3.1.23"
     source-map-js "^0.6.2"
+
+prismjs@^1.24.1:
+  version "1.24.1"
+  resolved "https://registry.nlark.com/prismjs/download/prismjs-1.24.1.tgz?cache=0&sync_timestamp=1625312963163&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fprismjs%2Fdownload%2Fprismjs-1.24.1.tgz#c4d7895c4d6500289482fa8936d9cdd192684036"
+  integrity sha1-xNeJXE1lACiUgvqJNtnN0ZJoQDY=
 
 pump@^3.0.0:
   version "3.0.0"

@@ -3,7 +3,7 @@
     <TopNav/>
     <main>
       <h1>Card UI</h1>
-      <h2>一个基于 VUE3.0 和卡片设计风格的UI组件库</h2>
+      <h2>基于 VUE3.0 和卡片设计风格的UI组件库</h2>
       <p class="actions">
         <a href="https://github.com">GitHub</a>
         <router-link to="/doc">开始</router-link>
@@ -121,16 +121,16 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  //box-shadow: 2px 8px 12px #ebedf0;
   animation:morph 2s linear infinite alternate;
   background: linear-gradient(to bottom,#f3f9ff,#eff8ff);
   >h1{
     color: #1a2b3b;
     font-size: 80px;
     font-weight: 600;
+    text-align: center;
   }
   >h2{
-    white-space:nowrap;
+    text-align: center;
   }
   > .actions{
     padding: 8px 0;
@@ -164,7 +164,6 @@ main {
   >ul {
     display: flex;
     flex-wrap: wrap;
-
     >li {
       width: 400px;
       margin: 16px 0;

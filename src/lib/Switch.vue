@@ -1,11 +1,8 @@
 <template>
-  <div>
     <button class="card-swc-btn" @click="toggle" :class="{checked:value}">
       <div class="card-swc-bg"></div>
       <span class="card-swc-circle" ></span>
     </button>
-    {{value}}
-  </div>
 </template>
 
 <script >
@@ -70,5 +67,6 @@ export default {
         left: calc(100% - #{$h2} - 1px)
       }
     }
+
   }
 </style>
