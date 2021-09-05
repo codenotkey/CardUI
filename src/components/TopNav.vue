@@ -1,10 +1,12 @@
 <template>
   <div class="navContent">
-    <span class="toggleAside" @click="toggleAside"><img src="../assets/更多.png" alt=""/></span>
+    <span class="toggleAside" @click="toggleAside">
+      <img src="../assets/更多.png" alt="11"/>
+    </span>
     <span class="logo">
       <router-link to="/" >
-        <img src="../assets/卡片.png" alt="">
-        <img src="../assets/logoT.png" alt="" class="logo2">
+        <img src="../assets/卡片.png" alt="11">
+        <img src="../assets/logoT.png" alt="11" class="logo2">
       </router-link>
     </span>
     <ul class="menu">

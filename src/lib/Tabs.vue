@@ -16,7 +16,8 @@ import {
   computed,
   ref,
   watchEffect,
-  onMounted
+  onMounted,
+  Component
 } from 'vue'
 export default {
   props: {
@@ -48,7 +49,7 @@ export default {
 
     const defaults = context.slots.default()
     defaults.forEach((tag) => {
-      if (tag.type !== Tab) {
+      if ((tag.type as Component).name !== Tab.name) {
         throw new Error('Tabs 子标签必须是 Tab')
       }
     })
