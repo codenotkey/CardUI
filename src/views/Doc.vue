@@ -85,6 +85,14 @@ export default {
       background: white;
       padding: 40px 0 0 40px;
     }
+    @media (max-width: 500px) {
+      main{
+        padding: 10px 0 0 10px;
+      }
+      aside{
+          padding: 0 8px;
+      }
+    }
   }
 }
 </style>

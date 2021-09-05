@@ -1,6 +1,6 @@
 <template>
   <div class="navContent">
-    <span class="toggleAside" @click="toggleAside"><img src="../assets/更多.png"/></span>
+    <span class="toggleAside" @click="toggleAside"><img src="../assets/更多.png" alt=""/></span>
     <span class="logo">
       <router-link to="/" >
         <img src="../assets/卡片.png" alt="">
@@ -8,8 +8,7 @@
       </router-link>
     </span>
     <ul class="menu">
-      <li>菜单一</li>
-      <li>菜单二</li>
+      <li><router-link to="/doc">文档</router-link> </li>
     </ul>
   </div>
 </template>
@@ -58,9 +57,13 @@ export default {
 
     .toggleAside{
       display: none;
-      font-weight: 1000;
       >img{
         width: 28px;
+      }
+    }
+    .menu{
+      a{
+        font-size: 20px;
       }
     }
     @media (max-width: 500px) {

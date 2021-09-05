@@ -54,6 +54,7 @@ $border-color: #d9d9d9;
   margin: 16px 50px 35px 0;
   border-radius: 20px;
   box-shadow: 0 8px 12px #ebedf0;
+
   >h2 {
     color: #323233;
     font-weight: 600;
@@ -61,7 +62,11 @@ $border-color: #d9d9d9;
     padding: 8px 16px;
     //border-bottom: 1px solid $border-color;
   }
-
+  @media (max-width: 500px) {
+    .demo>h2{
+      font-size: 14px;
+    }
+  }
   &-component {
     padding: 16px;
   }
